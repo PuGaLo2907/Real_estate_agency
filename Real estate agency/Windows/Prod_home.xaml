@@ -1,0 +1,67 @@
+﻿<Window x:Class="Real_estate_agency.Windows.Prod_home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_estate_agency.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Договоры по продаже домов" Height="860" Width="1920" Icon="/Images/Logo.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Click="revers_btn_click" Width="40" Style="{StaticResource Button_Back}">
+                <Image Source="/Images/revers.png"></Image>
+            </Button>
+            <Button Content="Назад" Grid.Column="1" Style="{StaticResource Button_Back}" Name="Button_back" Click="Button_back_click"/>
+        </StackPanel>
+
+        <Image Style="{StaticResource Image_Pod}" Source="/Images/Home.png" ></Image>
+        <DataGrid ColumnWidth="*" IsReadOnly="True" AutoGenerateColumns="False" Name="buy_kvartir_tabl" Grid.Row="1">
+            <DataGrid.Columns >
+                <DataGridTextColumn Width="30" Header="№" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Width="320" Header="Адрес дома" Binding="{Binding Home1.Addres}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Владелец" Binding="{Binding Client.combococks}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Покупатель" Binding="{Binding Client1.combococks}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date_Dogovor}"></DataGridTextColumn>
+                <DataGridTextColumn Width="130" Header="Тип оплаты" Binding="{Binding Payment_type.Title}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Сотрудник" Binding="{Binding Staff1.combococks1}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="Редактировать">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Style="{StaticResource Button_table}" Content="Редактировать" Name="Redact" Click="Button_Redact"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel VerticalAlignment="Center">
+                <Button Style="{StaticResource Button_nastr}" Click="Button_add">
+                    <Image Style="{StaticResource Image_Logo}" Source="/Images/add_dogovor.png"></Image>
+                </Button>
+                <Button Style="{StaticResource Button_nastr}" Click="button_delete_click">
+                    <Image Style="{StaticResource Image_Logo}" Source="/Images/delete.png"></Image>
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Grid.Column="1" Orientation="Horizontal">
+                <Button Style="{StaticResource Button_pagin}" Click="GoToFirstPage" Height="30" Width="30"  Content="&lt;&lt;"></Button>
+                <Button Style="{StaticResource Button_pagin}" Click="GoToPreviousPage" Height="30" Width="30"  Content="&lt;"  ></Button>
+                <TextBox VerticalAlignment="Center" Name="TxtCurrentPage"  Height="30" Width="50" IsEnabled="False" ></TextBox>
+                <Label Name="LblTotalPages" Height="30"  Width="50" >из N</Label>
+                <Button Style="{StaticResource Button_pagin}" Click="GoToNextPage" Height="30" Width="30" Content="&gt;"></Button>
+                <Button Style="{StaticResource Button_pagin}" Click="GoToLastPage" Height="30" Width="30"  Content="&gt;&gt;"  ></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

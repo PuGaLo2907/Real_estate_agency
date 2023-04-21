@@ -1,0 +1,304 @@
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.AssemblyReference.cache
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.SuggestedBindingRedirects.cache
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\MainWindow.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\App.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_MarkupCompile.cache
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_MarkupCompile.lref
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.exe.config
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.exe
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.pdb
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\App.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\MainWindow.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.g.resources
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real_estate_agency.Properties.Resources.resources
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.GenerateResource.cache
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.CoreCompileInputs.cache
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.exe
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.pdb
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Menu.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Menu.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Nedviz.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Nedviz.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Dogovor.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Dogovor.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.dll
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.SqlServer.dll
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.xml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.SqlServer.xml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\ru\EntityFramework.resources.dll
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_Content.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.CopyComplete
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Kvartira.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Kvartira.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\House.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\House.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promises.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promises.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Staff_pages.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Staff_pages.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Client_pages.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Client_pages.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\dolznost.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Sostoyanie.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Tip_nedviz.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\dolznost.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Sostoyanie.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Tip_nedviz.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Obyav.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Oplata.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Obyav.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Oplata.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\nachal.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\nachal.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Client_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Client_add.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Staff_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Staff_add.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\dolznost_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\dolznost_add.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Tip_nedviz_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Tip_nedviz_add.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Sostayanie_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Sostayanie_add.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\add_type.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\add_type.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\payment_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\payment_add.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\kvartira_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\kvartira_add.baml
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Home_add.g.cs
+E:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Home_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.exe.config
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.exe
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.pdb
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.dll
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.SqlServer.dll
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.xml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.SqlServer.xml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\ru\EntityFramework.resources.dll
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.AssemblyReference.cache
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.SuggestedBindingRedirects.cache
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\MainWindow.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Client_pages.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Dogovor.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\dolznost.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\nachal.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Nedviz.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Obyav.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Oplata.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Sostoyanie.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Staff_pages.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Tip_nedviz.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\add_type.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Client_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\dolznost_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\home_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\House.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Kvartira.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\kvartira_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Menu.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\payment_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promises.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Sostayanie_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Staff_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Tip_nedviz_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\App.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_Content.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_MarkupCompile.cache
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_MarkupCompile.lref
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\App.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\MainWindow.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Client_pages.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Dogovor.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\dolznost.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\nachal.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Nedviz.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Obyav.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Oplata.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Sostoyanie.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Staff_pages.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Tip_nedviz.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\add_type.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Client_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\dolznost_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\home_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\House.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Kvartira.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\kvartira_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Menu.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\payment_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promises.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Sostayanie_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Staff_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Tip_nedviz_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.g.resources
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real_estate_agency.Properties.Resources.resources
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.GenerateResource.cache
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.CoreCompileInputs.cache
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.CopyComplete
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.exe
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.pdb
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Vid_dogovor.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Vid_dogovor.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_menu.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_menu.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_kvartir.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_kvartir.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_kvartir.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_menu.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_kvartir.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_menu.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_kvartir_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_kvartir_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_Kvartir.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_Kvartir.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rieltor_menu.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rieltor_menu.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_Home_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_Home_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_home.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_home.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_dom.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_dom.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_dom.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_home_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_dom.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_home_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_home.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_home.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promis_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promis_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_premis.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_premis.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis_add.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis_add.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_promis.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_promis.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis.g.cs
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis.baml
+D:\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.ResolveComReference.cache
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.exe.config
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.exe
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\Real estate agency.pdb
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.dll
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.SqlServer.dll
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.xml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\EntityFramework.SqlServer.xml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\bin\Debug\ru\EntityFramework.resources.dll
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.AssemblyReference.cache
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.SuggestedBindingRedirects.cache
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.ResolveComReference.cache
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\MainWindow.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_home.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_kvartir.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_promis.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Client_pages.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Dogovor.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\dolznost.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\nachal.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Nedviz.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Obyav.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Oplata.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_dom.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_kvartir.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_premis.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Sostoyanie.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Staff_pages.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Tip_nedviz.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Vid_dogovor.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\add_type.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_dom.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_home_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Client_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\dolznost_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\home_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\House.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Kvartira.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\kvartira_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Menu.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\payment_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_home.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_menu.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promises.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promis_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_home_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_Kvartir.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_kvartir_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_menu.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rieltor_menu.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Sostayanie_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Staff_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Tip_nedviz_add.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\App.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_Content.g.cs
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_MarkupCompile.cache
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency_MarkupCompile.lref
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\App.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\MainWindow.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_home.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_kvartir.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\arent_promis.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Client_pages.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Dogovor.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\dolznost.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\nachal.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Nedviz.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Obyav.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Oplata.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_dom.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_kvartir.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Prod_premis.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Sostoyanie.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Staff_pages.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Tip_nedviz.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Pages\Vid_dogovor.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\add_type.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_dom.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_home_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_kvartir_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Buy_premis_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Client_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\dolznost_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\home_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\House.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Kvartira.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\kvartira_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Menu.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\payment_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_home.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Prod_menu.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promises.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Promis_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_home_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_Kvartir.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_kvartir_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_menu.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rent_premis_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Rieltor_menu.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Sostayanie_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Staff_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Windows\Tip_nedviz_add.baml
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.g.resources
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real_estate_agency.Properties.Resources.resources
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.GenerateResource.cache
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.CoreCompileInputs.cache
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.csproj.CopyComplete
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.exe
+D:\3 курс\3 курс - 2 половина\Курсовой(Агенство недвижимости)\проекты\Real estate agency\Real estate agency\obj\Debug\Real estate agency.pdb

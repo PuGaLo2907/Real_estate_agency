@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Ad_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Apartment" Relationship="Self.FK_Apartment_Ad_type1" FromRole="Ad_type" ToRole="Apartment" />
+    <NavigationProperty Name="Home" Relationship="Self.FK_Home_Ad_type1" FromRole="Ad_type" ToRole="Home" />
+    <NavigationProperty Name="Premises" Relationship="Self.FK_Premises_Ad_type1" FromRole="Ad_type" ToRole="Premises" />
+  </EntityType>
+  <EntityType Name="Apartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Addres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cadastral_number" Type="Double" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Apartment_floor" Type="Int32" Nullable="false" />
+    <Property Name="Floors_House" Type="Int32" Nullable="false" />
+    <Property Name="Number_of_rooms" Type="Int32" Nullable="false" />
+    <Property Name="Area" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Ad_types" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ad_type" Relationship="Self.FK_Apartment_Ad_type1" FromRole="Apartment" ToRole="Ad_type" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Apartment_Client" FromRole="Apartment" ToRole="Client" />
+    <NavigationProperty Name="Property_condition" Relationship="Self.FK_Apartment_Property_condition" FromRole="Apartment" ToRole="Property_condition" />
+    <NavigationProperty Name="Property_type" Relationship="Self.FK_Apartment_Property_type" FromRole="Apartment" ToRole="Property_type" />
+    <NavigationProperty Name="Buy_apartment" Relationship="Self.FK_Buy_apartment_Apartment" FromRole="Apartment" ToRole="Buy_apartment" />
+    <NavigationProperty Name="Rent_apartment" Relationship="Self.FK_Rent_apartment_Apartment" FromRole="Apartment" ToRole="Rent_apartment" />
+  </EntityType>
+  <EntityType Name="Buy_apartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Apartment" Type="Int32" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Buyer" Type="Int32" Nullable="false" />
+    <Property Name="Date_Dogovor" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Type_payment" Type="Int32" Nullable="false" />
+    <Property Name="Staff" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Apartment1" Relationship="Self.FK_Buy_apartment_Apartment" FromRole="Buy_apartment" ToRole="Apartment" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Buy_apartment_Client" FromRole="Buy_apartment" ToRole="Client" />
+    <NavigationProperty Name="Client1" Relationship="Self.FK_Buy_apartment_Client1" FromRole="Buy_apartment" ToRole="Client" />
+    <NavigationProperty Name="Payment_type" Relationship="Self.FK_Buy_apartment_Payment_type" FromRole="Buy_apartment" ToRole="Payment_type" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK_Buy_apartment_Staff" FromRole="Buy_apartment" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Buy_home">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Home" Type="Int32" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Buyer" Type="Int32" Nullable="false" />
+    <Property Name="Date_Dogovor" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Type_payment" Type="Int32" Nullable="false" />
+    <Property Name="Staff" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Buy_home_Client" FromRole="Buy_home" ToRole="Client" />
+    <NavigationProperty Name="Client1" Relationship="Self.FK_Buy_home_Client1" FromRole="Buy_home" ToRole="Client" />
+    <NavigationProperty Name="Home1" Relationship="Self.FK_Buy_home_Home" FromRole="Buy_home" ToRole="Home" />
+    <NavigationProperty Name="Payment_type" Relationship="Self.FK_Buy_home_Payment_type" FromRole="Buy_home" ToRole="Payment_type" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK_Buy_home_Staff" FromRole="Buy_home" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Buy_premises">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Premises" Type="Int32" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Buyer" Type="Int32" Nullable="false" />
+    <Property Name="Date_Dogovor" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Type_payment" Type="Int32" Nullable="false" />
+    <Property Name="Staff" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Buy_premises_Client" FromRole="Buy_premises" ToRole="Client" />
+    <NavigationProperty Name="Client1" Relationship="Self.FK_Buy_premises_Client1" FromRole="Buy_premises" ToRole="Client" />
+    <NavigationProperty Name="Payment_type" Relationship="Self.FK_Buy_premises_Payment_type" FromRole="Buy_premises" ToRole="Payment_type" />
+    <NavigationProperty Name="Premises1" Relationship="Self.FK_Buy_premises_Premises" FromRole="Buy_premises" ToRole="Premises" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK_Buy_premises_Staff" FromRole="Buy_premises" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Passport_number" Type="Double" Nullable="false" />
+    <Property Name="Date_of_birth" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="SNILS" Type="Double" Nullable="false" />
+    <Property Name="Registration" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INN" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Apartment" Relationship="Self.FK_Apartment_Client" FromRole="Client" ToRole="Apartment" />
+    <NavigationProperty Name="Buy_apartment" Relationship="Self.FK_Buy_apartment_Client" FromRole="Client" ToRole="Buy_apartment" />
+    <NavigationProperty Name="Buy_apartment1" Relationship="Self.FK_Buy_apartment_Client1" FromRole="Client" ToRole="Buy_apartment" />
+    <NavigationProperty Name="Buy_home" Relationship="Self.FK_Buy_home_Client" FromRole="Client" ToRole="Buy_home" />
+    <NavigationProperty Name="Buy_home1" Relationship="Self.FK_Buy_home_Client1" FromRole="Client" ToRole="Buy_home" />
+    <NavigationProperty Name="Buy_premises" Relationship="Self.FK_Buy_premises_Client" FromRole="Client" ToRole="Buy_premises" />
+    <NavigationProperty Name="Buy_premises1" Relationship="Self.FK_Buy_premises_Client1" FromRole="Client" ToRole="Buy_premises" />
+    <NavigationProperty Name="Home" Relationship="Self.FK_Home_Client" FromRole="Client" ToRole="Home" />
+    <NavigationProperty Name="Premises" Relationship="Self.FK_Premises_Client" FromRole="Client" ToRole="Premises" />
+    <NavigationProperty Name="Rent_apartment" Relationship="Self.FK_Rent_apartment_Client" FromRole="Client" ToRole="Rent_apartment" />
+    <NavigationProperty Name="Rent_apartment1" Relationship="Self.FK_Rent_apartment_Client1" FromRole="Client" ToRole="Rent_apartment" />
+    <NavigationProperty Name="Rent_home" Relationship="Self.FK_Rent_home_Client" FromRole="Client" ToRole="Rent_home" />
+    <NavigationProperty Name="Rent_home1" Relationship="Self.FK_Rent_home_Client1" FromRole="Client" ToRole="Rent_home" />
+    <NavigationProperty Name="Rent_promises" Relationship="Self.FK_Rent_promises_Client" FromRole="Client" ToRole="Rent_promises" />
+    <NavigationProperty Name="Rent_promises1" Relationship="Self.FK_Rent_promises_Client1" FromRole="Client" ToRole="Rent_promises" />
+  </EntityType>
+  <EntityType Name="Home">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Addres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cadastral_number" Type="Double" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Floors_House" Type="Int32" Nullable="false" />
+    <Property Name="Number_of_rooms" Type="Int32" Nullable="false" />
+    <Property Name="Square_house" Type="Int32" Nullable="false" />
+    <Property Name="Plot_area" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Ad_types" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ad_type" Relationship="Self.FK_Home_Ad_type1" FromRole="Home" ToRole="Ad_type" />
+    <NavigationProperty Name="Buy_home" Relationship="Self.FK_Buy_home_Home" FromRole="Home" ToRole="Buy_home" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Home_Client" FromRole="Home" ToRole="Client" />
+    <NavigationProperty Name="Property_condition" Relationship="Self.FK_Home_Property_condition" FromRole="Home" ToRole="Property_condition" />
+    <NavigationProperty Name="Property_type" Relationship="Self.FK_Home_Property_type" FromRole="Home" ToRole="Property_type" />
+    <NavigationProperty Name="Rent_home" Relationship="Self.FK_Rent_home_Home" FromRole="Home" ToRole="Rent_home" />
+  </EntityType>
+  <EntityType Name="Payment_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Buy_apartment" Relationship="Self.FK_Buy_apartment_Payment_type" FromRole="Payment_type" ToRole="Buy_apartment" />
+    <NavigationProperty Name="Buy_home" Relationship="Self.FK_Buy_home_Payment_type" FromRole="Payment_type" ToRole="Buy_home" />
+    <NavigationProperty Name="Buy_premises" Relationship="Self.FK_Buy_premises_Payment_type" FromRole="Payment_type" ToRole="Buy_premises" />
+  </EntityType>
+  <EntityType Name="Positions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_Staff_Positions1" FromRole="Positions" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Premises">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Addres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cadastral_number" Type="Double" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int32" Nullable="false" />
+    <Property Name="Area" Type="Double" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Ad_types" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ad_type" Relationship="Self.FK_Premises_Ad_type1" FromRole="Premises" ToRole="Ad_type" />
+    <NavigationProperty Name="Buy_premises" Relationship="Self.FK_Buy_premises_Premises" FromRole="Premises" ToRole="Buy_premises" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Premises_Client" FromRole="Premises" ToRole="Client" />
+    <NavigationProperty Name="Property_condition" Relationship="Self.FK_Premises_Property_condition" FromRole="Premises" ToRole="Property_condition" />
+    <NavigationProperty Name="Property_type" Relationship="Self.FK_Premises_Property_type" FromRole="Premises" ToRole="Property_type" />
+    <NavigationProperty Name="Rent_promises" Relationship="Self.FK_Rent_promises_Premises" FromRole="Premises" ToRole="Rent_promises" />
+  </EntityType>
+  <EntityType Name="Property_condition">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Apartment" Relationship="Self.FK_Apartment_Property_condition" FromRole="Property_condition" ToRole="Apartment" />
+    <NavigationProperty Name="Home" Relationship="Self.FK_Home_Property_condition" FromRole="Property_condition" ToRole="Home" />
+    <NavigationProperty Name="Premises" Relationship="Self.FK_Premises_Property_condition" FromRole="Property_condition" ToRole="Premises" />
+  </EntityType>
+  <EntityType Name="Property_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Apartment" Relationship="Self.FK_Apartment_Property_type" FromRole="Property_type" ToRole="Apartment" />
+    <NavigationProperty Name="Home" Relationship="Self.FK_Home_Property_type" FromRole="Property_type" ToRole="Home" />
+    <NavigationProperty Name="Premises" Relationship="Self.FK_Premises_Property_type" FromRole="Property_type" ToRole="Premises" />
+  </EntityType>
+  <EntityType Name="Rent_apartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Apartment" Type="Int32" Nullable="false" />
+    <Property Name="Tenant" Type="Int32" Nullable="false" />
+    <Property Name="Deal_date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Arrival_date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Date_of_departure" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Deadline" Type="Int32" />
+    <Property Name="Staff" Type="Int32" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Apartment1" Relationship="Self.FK_Rent_apartment_Apartment" FromRole="Rent_apartment" ToRole="Apartment" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Rent_apartment_Client" FromRole="Rent_apartment" ToRole="Client" />
+    <NavigationProperty Name="Client1" Relationship="Self.FK_Rent_apartment_Client1" FromRole="Rent_apartment" ToRole="Client" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK_Rent_apartment_Staff" FromRole="Rent_apartment" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Rent_home">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Home" Type="Int32" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Tenant" Type="Int32" Nullable="false" />
+    <Property Name="Deal_date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Arrival_date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Date_of_departure" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Deadline" Type="Int32" />
+    <Property Name="Staff" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Rent_home_Client" FromRole="Rent_home" ToRole="Client" />
+    <NavigationProperty Name="Client1" Relationship="Self.FK_Rent_home_Client1" FromRole="Rent_home" ToRole="Client" />
+    <NavigationProperty Name="Home1" Relationship="Self.FK_Rent_home_Home" FromRole="Rent_home" ToRole="Home" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK_Rent_home_Staff" FromRole="Rent_home" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Rent_promises">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Promises" Type="Int32" Nullable="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="Tenant" Type="Int32" Nullable="false" />
+    <Property Name="Deal_date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Arrival_date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Date_of_departure" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Deadline" Type="Int32" />
+    <Property Name="Staff" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Rent_promises_Client" FromRole="Rent_promises" ToRole="Client" />
+    <NavigationProperty Name="Client1" Relationship="Self.FK_Rent_promises_Client1" FromRole="Rent_promises" ToRole="Client" />
+    <NavigationProperty Name="Premises" Relationship="Self.FK_Rent_promises_Premises" FromRole="Rent_promises" ToRole="Premises" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK_Rent_promises_Staff" FromRole="Rent_promises" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Passport_number" Type="Double" Nullable="false" />
+    <Property Name="Date_of_birth" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Positions_" Type="Int32" Nullable="false" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Buy_apartment" Relationship="Self.FK_Buy_apartment_Staff" FromRole="Staff" ToRole="Buy_apartment" />
+    <NavigationProperty Name="Buy_home" Relationship="Self.FK_Buy_home_Staff" FromRole="Staff" ToRole="Buy_home" />
+    <NavigationProperty Name="Buy_premises" Relationship="Self.FK_Buy_premises_Staff" FromRole="Staff" ToRole="Buy_premises" />
+    <NavigationProperty Name="Positions" Relationship="Self.FK_Staff_Positions1" FromRole="Staff" ToRole="Positions" />
+    <NavigationProperty Name="Rent_apartment" Relationship="Self.FK_Rent_apartment_Staff" FromRole="Staff" ToRole="Rent_apartment" />
+    <NavigationProperty Name="Rent_home" Relationship="Self.FK_Rent_home_Staff" FromRole="Staff" ToRole="Rent_home" />
+    <NavigationProperty Name="Rent_promises" Relationship="Self.FK_Rent_promises_Staff" FromRole="Staff" ToRole="Rent_promises" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Apartment_Ad_type1">
+    <End Role="Ad_type" Type="Self.Ad_type" Multiplicity="1" />
+    <End Role="Apartment" Type="Self.Apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ad_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Apartment">
+        <PropertyRef Name="Ad_types" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Home_Ad_type1">
+    <End Role="Ad_type" Type="Self.Ad_type" Multiplicity="1" />
+    <End Role="Home" Type="Self.Home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ad_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Home">
+        <PropertyRef Name="Ad_types" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Premises_Ad_type1">
+    <End Role="Ad_type" Type="Self.Ad_type" Multiplicity="1" />
+    <End Role="Premises" Type="Self.Premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ad_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Premises">
+        <PropertyRef Name="Ad_types" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Apartment_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Apartment" Type="Self.Apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Apartment">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Apartment_Property_condition">
+    <End Role="Property_condition" Type="Self.Property_condition" Multiplicity="1" />
+    <End Role="Apartment" Type="Self.Apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_condition">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Apartment">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Apartment_Property_type">
+    <End Role="Property_type" Type="Self.Property_type" Multiplicity="1" />
+    <End Role="Apartment" Type="Self.Apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Apartment">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_apartment_Apartment">
+    <End Role="Apartment" Type="Self.Apartment" Multiplicity="1" />
+    <End Role="Buy_apartment" Type="Self.Buy_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Apartment">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_apartment">
+        <PropertyRef Name="Apartment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_apartment_Apartment">
+    <End Role="Apartment" Type="Self.Apartment" Multiplicity="1" />
+    <End Role="Rent_apartment" Type="Self.Rent_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Apartment">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_apartment">
+        <PropertyRef Name="Apartment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_apartment_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Buy_apartment" Type="Self.Buy_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_apartment">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_apartment_Client1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Buy_apartment" Type="Self.Buy_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_apartment">
+        <PropertyRef Name="Buyer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_apartment_Payment_type">
+    <End Role="Payment_type" Type="Self.Payment_type" Multiplicity="1" />
+    <End Role="Buy_apartment" Type="Self.Buy_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_apartment">
+        <PropertyRef Name="Type_payment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_apartment_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Buy_apartment" Type="Self.Buy_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_apartment">
+        <PropertyRef Name="Staff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_home_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Buy_home" Type="Self.Buy_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_home">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_home_Client1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Buy_home" Type="Self.Buy_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_home">
+        <PropertyRef Name="Buyer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_home_Home">
+    <End Role="Home" Type="Self.Home" Multiplicity="1" />
+    <End Role="Buy_home" Type="Self.Buy_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Home">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_home">
+        <PropertyRef Name="Home" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_home_Payment_type">
+    <End Role="Payment_type" Type="Self.Payment_type" Multiplicity="1" />
+    <End Role="Buy_home" Type="Self.Buy_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_home">
+        <PropertyRef Name="Type_payment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_home_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Buy_home" Type="Self.Buy_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_home">
+        <PropertyRef Name="Staff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_premises_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Buy_premises" Type="Self.Buy_premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_premises">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_premises_Client1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Buy_premises" Type="Self.Buy_premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_premises">
+        <PropertyRef Name="Buyer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_premises_Payment_type">
+    <End Role="Payment_type" Type="Self.Payment_type" Multiplicity="1" />
+    <End Role="Buy_premises" Type="Self.Buy_premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_premises">
+        <PropertyRef Name="Type_payment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_premises_Premises">
+    <End Role="Premises" Type="Self.Premises" Multiplicity="1" />
+    <End Role="Buy_premises" Type="Self.Buy_premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Premises">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_premises">
+        <PropertyRef Name="Premises" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_premises_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Buy_premises" Type="Self.Buy_premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buy_premises">
+        <PropertyRef Name="Staff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Home_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Home" Type="Self.Home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Home">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Premises_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Premises" Type="Self.Premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Premises">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_apartment_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rent_apartment" Type="Self.Rent_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_apartment">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_apartment_Client1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rent_apartment" Type="Self.Rent_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_apartment">
+        <PropertyRef Name="Tenant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_home_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rent_home" Type="Self.Rent_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_home">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_home_Client1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rent_home" Type="Self.Rent_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_home">
+        <PropertyRef Name="Tenant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_promises_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rent_promises" Type="Self.Rent_promises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_promises">
+        <PropertyRef Name="Owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_promises_Client1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rent_promises" Type="Self.Rent_promises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_promises">
+        <PropertyRef Name="Tenant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Home_Property_condition">
+    <End Role="Property_condition" Type="Self.Property_condition" Multiplicity="1" />
+    <End Role="Home" Type="Self.Home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_condition">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Home">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Home_Property_type">
+    <End Role="Property_type" Type="Self.Property_type" Multiplicity="1" />
+    <End Role="Home" Type="Self.Home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Home">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_home_Home">
+    <End Role="Home" Type="Self.Home" Multiplicity="1" />
+    <End Role="Rent_home" Type="Self.Rent_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Home">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_home">
+        <PropertyRef Name="Home" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Positions1">
+    <End Role="Positions" Type="Self.Positions" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Positions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Positions_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Premises_Property_condition">
+    <End Role="Property_condition" Type="Self.Property_condition" Multiplicity="1" />
+    <End Role="Premises" Type="Self.Premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_condition">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Premises">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Premises_Property_type">
+    <End Role="Property_type" Type="Self.Property_type" Multiplicity="1" />
+    <End Role="Premises" Type="Self.Premises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Premises">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_promises_Premises">
+    <End Role="Premises" Type="Self.Premises" Multiplicity="1" />
+    <End Role="Rent_promises" Type="Self.Rent_promises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Premises">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_promises">
+        <PropertyRef Name="Promises" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_apartment_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Rent_apartment" Type="Self.Rent_apartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_apartment">
+        <PropertyRef Name="Staff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_home_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Rent_home" Type="Self.Rent_home" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_home">
+        <PropertyRef Name="Staff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rent_promises_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Rent_promises" Type="Self.Rent_promises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Rent_promises">
+        <PropertyRef Name="Staff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Real_estate_agencyEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Ad_type" EntityType="Self.Ad_type" />
+    <EntitySet Name="Apartment" EntityType="Self.Apartment" />
+    <EntitySet Name="Buy_apartment" EntityType="Self.Buy_apartment" />
+    <EntitySet Name="Buy_home" EntityType="Self.Buy_home" />
+    <EntitySet Name="Buy_premises" EntityType="Self.Buy_premises" />
+    <EntitySet Name="Client" EntityType="Self.Client" />
+    <EntitySet Name="Home" EntityType="Self.Home" />
+    <EntitySet Name="Payment_type" EntityType="Self.Payment_type" />
+    <EntitySet Name="Positions" EntityType="Self.Positions" />
+    <EntitySet Name="Premises" EntityType="Self.Premises" />
+    <EntitySet Name="Property_condition" EntityType="Self.Property_condition" />
+    <EntitySet Name="Property_type" EntityType="Self.Property_type" />
+    <EntitySet Name="Rent_apartment" EntityType="Self.Rent_apartment" />
+    <EntitySet Name="Rent_home" EntityType="Self.Rent_home" />
+    <EntitySet Name="Rent_promises" EntityType="Self.Rent_promises" />
+    <EntitySet Name="Staff" EntityType="Self.Staff" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_Apartment_Ad_type1" Association="Self.FK_Apartment_Ad_type1">
+      <End Role="Ad_type" EntitySet="Ad_type" />
+      <End Role="Apartment" EntitySet="Apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Home_Ad_type1" Association="Self.FK_Home_Ad_type1">
+      <End Role="Ad_type" EntitySet="Ad_type" />
+      <End Role="Home" EntitySet="Home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Premises_Ad_type1" Association="Self.FK_Premises_Ad_type1">
+      <End Role="Ad_type" EntitySet="Ad_type" />
+      <End Role="Premises" EntitySet="Premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Apartment_Client" Association="Self.FK_Apartment_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Apartment" EntitySet="Apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Apartment_Property_condition" Association="Self.FK_Apartment_Property_condition">
+      <End Role="Property_condition" EntitySet="Property_condition" />
+      <End Role="Apartment" EntitySet="Apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Apartment_Property_type" Association="Self.FK_Apartment_Property_type">
+      <End Role="Property_type" EntitySet="Property_type" />
+      <End Role="Apartment" EntitySet="Apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_apartment_Apartment" Association="Self.FK_Buy_apartment_Apartment">
+      <End Role="Apartment" EntitySet="Apartment" />
+      <End Role="Buy_apartment" EntitySet="Buy_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_apartment_Apartment" Association="Self.FK_Rent_apartment_Apartment">
+      <End Role="Apartment" EntitySet="Apartment" />
+      <End Role="Rent_apartment" EntitySet="Rent_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_apartment_Client" Association="Self.FK_Buy_apartment_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Buy_apartment" EntitySet="Buy_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_apartment_Client1" Association="Self.FK_Buy_apartment_Client1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Buy_apartment" EntitySet="Buy_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_apartment_Payment_type" Association="Self.FK_Buy_apartment_Payment_type">
+      <End Role="Payment_type" EntitySet="Payment_type" />
+      <End Role="Buy_apartment" EntitySet="Buy_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_apartment_Staff" Association="Self.FK_Buy_apartment_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Buy_apartment" EntitySet="Buy_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_home_Client" Association="Self.FK_Buy_home_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Buy_home" EntitySet="Buy_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_home_Client1" Association="Self.FK_Buy_home_Client1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Buy_home" EntitySet="Buy_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_home_Home" Association="Self.FK_Buy_home_Home">
+      <End Role="Home" EntitySet="Home" />
+      <End Role="Buy_home" EntitySet="Buy_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_home_Payment_type" Association="Self.FK_Buy_home_Payment_type">
+      <End Role="Payment_type" EntitySet="Payment_type" />
+      <End Role="Buy_home" EntitySet="Buy_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_home_Staff" Association="Self.FK_Buy_home_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Buy_home" EntitySet="Buy_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_premises_Client" Association="Self.FK_Buy_premises_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Buy_premises" EntitySet="Buy_premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_premises_Client1" Association="Self.FK_Buy_premises_Client1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Buy_premises" EntitySet="Buy_premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_premises_Payment_type" Association="Self.FK_Buy_premises_Payment_type">
+      <End Role="Payment_type" EntitySet="Payment_type" />
+      <End Role="Buy_premises" EntitySet="Buy_premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_premises_Premises" Association="Self.FK_Buy_premises_Premises">
+      <End Role="Premises" EntitySet="Premises" />
+      <End Role="Buy_premises" EntitySet="Buy_premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_premises_Staff" Association="Self.FK_Buy_premises_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Buy_premises" EntitySet="Buy_premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Home_Client" Association="Self.FK_Home_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Home" EntitySet="Home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Premises_Client" Association="Self.FK_Premises_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Premises" EntitySet="Premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_apartment_Client" Association="Self.FK_Rent_apartment_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Rent_apartment" EntitySet="Rent_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_apartment_Client1" Association="Self.FK_Rent_apartment_Client1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Rent_apartment" EntitySet="Rent_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_home_Client" Association="Self.FK_Rent_home_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Rent_home" EntitySet="Rent_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_home_Client1" Association="Self.FK_Rent_home_Client1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Rent_home" EntitySet="Rent_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_promises_Client" Association="Self.FK_Rent_promises_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Rent_promises" EntitySet="Rent_promises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_promises_Client1" Association="Self.FK_Rent_promises_Client1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Rent_promises" EntitySet="Rent_promises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Home_Property_condition" Association="Self.FK_Home_Property_condition">
+      <End Role="Property_condition" EntitySet="Property_condition" />
+      <End Role="Home" EntitySet="Home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Home_Property_type" Association="Self.FK_Home_Property_type">
+      <End Role="Property_type" EntitySet="Property_type" />
+      <End Role="Home" EntitySet="Home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_home_Home" Association="Self.FK_Rent_home_Home">
+      <End Role="Home" EntitySet="Home" />
+      <End Role="Rent_home" EntitySet="Rent_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Positions1" Association="Self.FK_Staff_Positions1">
+      <End Role="Positions" EntitySet="Positions" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Premises_Property_condition" Association="Self.FK_Premises_Property_condition">
+      <End Role="Property_condition" EntitySet="Property_condition" />
+      <End Role="Premises" EntitySet="Premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Premises_Property_type" Association="Self.FK_Premises_Property_type">
+      <End Role="Property_type" EntitySet="Property_type" />
+      <End Role="Premises" EntitySet="Premises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_promises_Premises" Association="Self.FK_Rent_promises_Premises">
+      <End Role="Premises" EntitySet="Premises" />
+      <End Role="Rent_promises" EntitySet="Rent_promises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_apartment_Staff" Association="Self.FK_Rent_apartment_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Rent_apartment" EntitySet="Rent_apartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_home_Staff" Association="Self.FK_Rent_home_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Rent_home" EntitySet="Rent_home" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rent_promises_Staff" Association="Self.FK_Rent_promises_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Rent_promises" EntitySet="Rent_promises" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,73 @@
+﻿<Page x:Class="Real_estate_agency.Pages.Tip_nedviz"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Real_estate_agency.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="860" d:DesignWidth="1500"
+      Title="Тип недвижимости">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Click="revers_btn_click" Width="40" Style="{StaticResource Button_Back}">
+                <Image Source="/Images/revers.png"></Image>
+            </Button>
+        </StackPanel>
+        <Image Style="{StaticResource Image_Pod}" Source="/Images/Tip_nedviz.png" ></Image>
+        <DataGrid ColumnWidth="*" IsReadOnly="True" AutoGenerateColumns="False" Name="tip_nedviz" Grid.Row="1">
+            <DataGrid.Columns >
+                <DataGridTextColumn Width="1100" Header="Название" Binding="{Binding Title}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="Редактировать">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Style="{StaticResource Button_table}" Content="Редактировать" Name="Redact" Click="Button_Redact"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel VerticalAlignment="Center">
+                <Button Style="{StaticResource Button_nastr}" Click="Button_add">
+                    <Image Style="{StaticResource Image_Logo}" Source="/Images/dom_add.png"></Image>
+                </Button>
+                <Button Style="{StaticResource Button_nastr}" Click="button_delete_click">
+                    <Image Style="{StaticResource Image_Logo}" Source="/Images/delete.png"></Image>
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Grid.Column="1" Orientation="Horizontal">
+                <Button Style="{StaticResource Button_pagin}" Click="GoToFirstPage" Height="30" Width="30"  Content="&lt;&lt;"></Button>
+                <Button Style="{StaticResource Button_pagin}" Click="GoToPreviousPage" Height="30" Width="30"  Content="&lt;"  ></Button>
+                <TextBox VerticalAlignment="Center" Name="TxtCurrentPage"  Height="30" Width="50" IsEnabled="False" ></TextBox>
+                <Label Name="LblTotalPages" Height="30"  Width="50" >из N</Label>
+                <Button Style="{StaticResource Button_pagin}" Click="GoToNextPage" Height="30" Width="30" Content="&gt;"></Button>
+                <Button Style="{StaticResource Button_pagin}" Click="GoToLastPage" Height="30" Width="30"  Content="&gt;&gt;"  ></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Orientation="Horizontal">
+                <StackPanel VerticalAlignment="Center" Margin="0, 0, 20, 0">
+                    <TextBlock Text="П" Style="{StaticResource TextBlock_Zaglav}"></TextBlock>
+                    <TextBlock Text="О" Style="{StaticResource TextBlock_Zaglav}"></TextBlock>
+                    <TextBlock Text="И" Style="{StaticResource TextBlock_Zaglav}"></TextBlock>
+                    <TextBlock Text="С" Style="{StaticResource TextBlock_Zaglav}"></TextBlock>
+                    <TextBlock Text="К" Style="{StaticResource TextBlock_Zaglav}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                        <TextBlock Style="{StaticResource TextBlock_add}" Text="Название"></TextBlock>
+                        <TextBox Style="{StaticResource TextBox_add}" Width="200" TextChanged="textSearchClick" Name="textbox_serach"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

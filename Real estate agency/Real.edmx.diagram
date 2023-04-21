@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b7f9f7091d52417b9b9d466593c088b6" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Ad_type" Width="1.5" PointX="3.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Apartment" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Buy_apartment" Width="1.5" PointX="8.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Buy_home" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Buy_premises" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Client" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Home" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Payment_type" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Positions" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Premises" Width="1.5" PointX="6" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Property_condition" Width="1.5" PointX="3.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Property_type" Width="1.5" PointX="3.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Rent_apartment" Width="1.5" PointX="11.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Rent_home" Width="1.5" PointX="8.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Rent_promises" Width="1.5" PointX="11.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Staff" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Apartment_Ad_type1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Home_Ad_type1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Premises_Ad_type1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Apartment_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Apartment_Property_condition" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Apartment_Property_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_apartment_Apartment" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_apartment_Apartment" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_apartment_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_apartment_Client1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_apartment_Payment_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_apartment_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_home_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_home_Client1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_home_Home" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_home_Payment_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_home_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_premises_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_premises_Client1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_premises_Payment_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_premises_Premises" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Buy_premises_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Home_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Premises_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_apartment_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_apartment_Client1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_home_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_home_Client1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_promises_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_promises_Client1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Home_Property_condition" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Home_Property_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_home_Home" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Staff_Positions1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Premises_Property_condition" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Premises_Property_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_promises_Premises" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_apartment_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_home_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Rent_promises_Staff" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,89 @@
+﻿<Window x:Class="Real_estate_agency.Windows.home_add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_estate_agency.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Дома" Height="860" Width="1920" Icon="/Images/Logo.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/Images/client.png" Style="{StaticResource Image_Pod}"/>
+        <Button Content="Назад" Grid.Column="1" Style="{StaticResource Button_Back}" Name="Button_back" Click="Button_back_click"/>
+        <Border Grid.Row="1" BorderThickness="0,0,1,0" BorderBrush="#FF04A0FF">
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="0,1,0,0" BorderBrush="#FF04A0FF">
+            <StackPanel Margin="50, 50, 0, 0" Width="500" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Тип"></TextBlock>
+                    <ComboBox Name="tip_box" SelectedValue="{Binding Type}"  DisplayMemberPath="Title" SelectedValuePath="ID"></ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Состояние"></TextBlock>
+                    <ComboBox Name="status_box" SelectedValue="{Binding Status}"  DisplayMemberPath="Title" SelectedValuePath="ID"></ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Адрес"></TextBlock>
+                    <TextBox Style="{StaticResource TextBox_add}" Text="{Binding Addres}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Кадастровый номер"></TextBlock>
+                    <TextBox MaxLength="9" Style="{StaticResource TextBox_add}" Text="{Binding Cadastral_number}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Владелец"></TextBlock>
+                    <ComboBox Name="owner_box" SelectedValue="{Binding Owner}"  DisplayMemberPath="combococks" SelectedValuePath="ID"></ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Кол-во этажей"></TextBlock>
+                    <TextBox MaxLength="50" Style="{StaticResource TextBox_add}" Text="{Binding Floors_House}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Колличество комнат"></TextBlock>
+                    <TextBox MaxLength="12" Style="{StaticResource TextBox_add}" Text="{Binding Number_of_rooms}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Площадь дома"></TextBlock>
+                    <TextBox MaxLength="12" Style="{StaticResource TextBox_add}" Text="{Binding Square_house}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Площадь участка"></TextBlock>
+                    <TextBox MaxLength="12" Style="{StaticResource TextBox_add}" Text="{Binding Plot_area}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Цена"></TextBlock>
+                    <TextBox MaxLength="12" Style="{StaticResource TextBox_add}" Text="{Binding Price}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                    <TextBlock Style="{StaticResource TextBlock_add}" Text="Тип объявления"></TextBlock>
+                    <ComboBox Name="ob_box" SelectedValue="{Binding Ad_types}"  DisplayMemberPath="Title" SelectedValuePath="ID"></ComboBox>
+                </StackPanel>
+                <Button Margin="50, 1, 1, 1" HorizontalAlignment="Left" Width="150" Height="30" Click="button_s_click" Style="{StaticResource Button_Registr}">
+                    <StackPanel>
+                        <Image/>
+                        <TextBlock Text=" Картинка"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <TextBlock Margin="-250, 10, 1, 1" Style="{StaticResource TextBlock_add}" Text="{Binding Image}" Name="textblock_1"></TextBlock>
+                <Button Margin="50" HorizontalAlignment="Left" Width="350" Height="50" Click="button_save_click" Style="{StaticResource Button_Registr}">
+                    <StackPanel>
+                        <Image/>
+                        <TextBlock Text=" Сохранить"></TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal"  Margin="0, 0, 100, 20">
+            <Image Source="{Binding Image}" Width="500"></Image>
+        </StackPanel>
+    </Grid>
+</Window>

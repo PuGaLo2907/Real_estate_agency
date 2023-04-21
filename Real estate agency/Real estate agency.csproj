@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2950F077-87EB-4964-BE76-D91C63920152}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Real_estate_agency</RootNamespace>
+    <AssemblyName>Real estate agency</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Ad_type.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Apartment.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Buy_apartment.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Buy_home.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Buy_premises.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataWorker.cs" />
+    <Compile Include="Home.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\arent_home.xaml.cs">
+      <DependentUpon>arent_home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\arent_kvartir.xaml.cs">
+      <DependentUpon>arent_kvartir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\arent_promis.xaml.cs">
+      <DependentUpon>arent_promis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Client_pages.xaml.cs">
+      <DependentUpon>Client_pages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dogovor.xaml.cs">
+      <DependentUpon>Dogovor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\dolznost.xaml.cs">
+      <DependentUpon>dolznost.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\nachal.xaml.cs">
+      <DependentUpon>nachal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nedviz.xaml.cs">
+      <DependentUpon>Nedviz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Obyav.xaml.cs">
+      <DependentUpon>Obyav.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Oplata.xaml.cs">
+      <DependentUpon>Oplata.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Prod_dom.xaml.cs">
+      <DependentUpon>Prod_dom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Prod_kvartir.xaml.cs">
+      <DependentUpon>Prod_kvartir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Prod_premis.xaml.cs">
+      <DependentUpon>Prod_premis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Sostoyanie.xaml.cs">
+      <DependentUpon>Sostoyanie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Staff_pages.xaml.cs">
+      <DependentUpon>Staff_pages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tip_nedviz.xaml.cs">
+      <DependentUpon>Tip_nedviz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vid_dogovor.xaml.cs">
+      <DependentUpon>Vid_dogovor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WordHelper.cs" />
+    <Compile Include="Payment_type.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Positions.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Premises.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Property_condition.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Property_type.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Real.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Real.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Rent_apartment.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rent_home.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rent_promises.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Real.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\add_type.xaml.cs">
+      <DependentUpon>add_type.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Buy_dom.xaml.cs">
+      <DependentUpon>Buy_dom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Buy_home_add.xaml.cs">
+      <DependentUpon>Buy_home_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Buy_kvartir.xaml.cs">
+      <DependentUpon>Buy_kvartir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Buy_kvartir_add.xaml.cs">
+      <DependentUpon>Buy_kvartir_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Buy_premis.xaml.cs">
+      <DependentUpon>Buy_premis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Buy_premis_add.xaml.cs">
+      <DependentUpon>Buy_premis_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Client_add.xaml.cs">
+      <DependentUpon>Client_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\dolznost_add.xaml.cs">
+      <DependentUpon>dolznost_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\home_add.xaml.cs">
+      <DependentUpon>home_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\House.xaml.cs">
+      <DependentUpon>House.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Kvartira.xaml.cs">
+      <DependentUpon>Kvartira.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\kvartira_add.xaml.cs">
+      <DependentUpon>kvartira_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\payment_add.xaml.cs">
+      <DependentUpon>payment_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Prod_home.xaml.cs">
+      <DependentUpon>Prod_home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Prod_menu.xaml.cs">
+      <DependentUpon>Prod_menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Promises.xaml.cs">
+      <DependentUpon>Promises.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Promis_add.xaml.cs">
+      <DependentUpon>Promis_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Rent_home_add.xaml.cs">
+      <DependentUpon>Rent_home_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Rent_Kvartir.xaml.cs">
+      <DependentUpon>Rent_Kvartir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Rent_kvartir_add.xaml.cs">
+      <DependentUpon>Rent_kvartir_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Rent_menu.xaml.cs">
+      <DependentUpon>Rent_menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Rent_premis.xaml.cs">
+      <DependentUpon>Rent_premis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Rent_premis_add.xaml.cs">
+      <DependentUpon>Rent_premis_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Rieltor_menu.xaml.cs">
+      <DependentUpon>Rieltor_menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Sostayanie_add.xaml.cs">
+      <DependentUpon>Sostayanie_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Staff_add.xaml.cs">
+      <DependentUpon>Staff_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Tip_nedviz_add.xaml.cs">
+      <DependentUpon>Tip_nedviz_add.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\arent_home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\arent_kvartir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\arent_promis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Client_pages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Dogovor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\dolznost.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\nachal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Nedviz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Obyav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Oplata.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Prod_dom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Prod_kvartir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Prod_premis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Sostoyanie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Staff_pages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Tip_nedviz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Vid_dogovor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\add_type.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Buy_dom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Buy_home_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Buy_kvartir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Buy_kvartir_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Buy_premis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Buy_premis_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Client_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\dolznost_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\home_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\House.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Kvartira.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\kvartira_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\payment_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Prod_home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Prod_menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Promises.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Promis_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Rent_home_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Rent_Kvartir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Rent_kvartir_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Rent_menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Rent_premis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Rent_premis_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Rieltor_menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Sostayanie_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Staff_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Tip_nedviz_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="Real.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Real.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Real.edmx.diagram">
+      <DependentUpon>Real.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kvartiry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Pomesh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ad_user.png" />
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\oplata.png" />
+    <Resource Include="Images\ob.png" />
+    <Resource Include="Images\sostayan.png" />
+    <Resource Include="Images\Tip_nedviz.png" />
+    <Resource Include="Images\client.png" />
+    <Resource Include="Images\Staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nazad.png" />
+    <Resource Include="Images\krest.png" />
+    <Resource Include="Images\revers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_dogovor.png" />
+    <Resource Include="Images\prod.png" />
+    <Resource Include="Images\rent.png" />
+    <Resource Include="Windows\Image\dom1.jpg" />
+    <Resource Include="Windows\Image\dom2.jpg" />
+    <Resource Include="Windows\Image\dom3.jpg" />
+    <Resource Include="Windows\Image\dom4.jpg" />
+    <Resource Include="Windows\Image\dom5.jpg" />
+    <Resource Include="Image\dom5.jpg" />
+    <Resource Include="Image\dom1.jpg" />
+    <Resource Include="Image\dom2.jpg" />
+    <Resource Include="Image\dom3.jpg" />
+    <Resource Include="Image\dom4.jpg" />
+    <Resource Include="Windows\Image\зонтик.jpg" />
+    <Resource Include="Windows\Image\kvartira5.jpg" />
+    <Resource Include="Windows\Image\kvartira4.jpg" />
+    <Resource Include="Windows\Image\kvartira3.jpg" />
+    <Resource Include="Windows\Image\kvartira2.jpg" />
+    <Resource Include="Windows\Image\kvartira1.jpg" />
+    <Resource Include="Image\kvartira1.jpg" />
+    <Resource Include="Image\kvartira2.jpg" />
+    <Resource Include="Image\kvartira3.jpg" />
+    <Resource Include="Image\kvartira4.jpg" />
+    <Resource Include="Image\kvartira5.jpg" />
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\dom_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\Image\pom4.jpg" />
+    <Resource Include="Pages\Image\pom3.jpg" />
+    <Resource Include="Pages\Image\pom2.jpg" />
+    <Resource Include="Pages\Image\pom1.jpg" />
+    <Resource Include="Pages\Image\kvartira5.jpg" />
+    <Resource Include="Pages\Image\kvartira4.jpg" />
+    <Resource Include="Pages\Image\kvartira3.jpg" />
+    <Resource Include="Pages\Image\kvartira2.jpg" />
+    <Resource Include="Pages\Image\kvartira1.jpg" />
+    <Resource Include="Pages\Image\dom5.jpg" />
+    <Resource Include="Pages\Image\dom4.jpg" />
+    <Resource Include="Pages\Image\dom3.jpg" />
+    <Resource Include="Pages\Image\dom2.jpg" />
+    <Resource Include="Pages\Image\dom1.jpg" />
+    <Resource Include="Image\pom1.jpg" />
+    <Resource Include="Image\pom2.jpg" />
+    <Resource Include="Image\pom3.jpg" />
+    <Resource Include="Image\pom4.jpg" />
+    <Resource Include="Windows\Image\pom1.jpg" />
+    <Resource Include="Windows\Image\pom2.jpg" />
+    <Resource Include="Windows\Image\pom3.jpg" />
+    <Resource Include="Windows\Image\pom4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Real.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Real.edmx</DependentUpon>
+      <LastGenOutput>Real.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Real.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Real.edmx</DependentUpon>
+      <LastGenOutput>Real.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

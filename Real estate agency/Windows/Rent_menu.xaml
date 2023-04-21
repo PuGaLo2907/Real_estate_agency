@@ -1,0 +1,33 @@
+﻿<Window x:Class="Real_estate_agency.Windows.Rent_menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_estate_agency.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Агенство недвижимости" Height="860" Width="1920" Icon="/Images/Logo.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Назад" Grid.Column="1" Style="{StaticResource Button_Back}" Name="Button_back" Click="Button_back_click"/>
+        <Image Style="{StaticResource Image_Logo}"/>
+        <Border Grid.Row="1" BorderThickness="0,0,1,0" BorderBrush="#FF04A0FF">
+            <StackPanel>
+                <Button Height="250" Content="Квартиры" Style="{StaticResource Button_Admin_menu}" Click="kvartir_click"/>
+                <Button Height="250" Content="Дома" Style="{StaticResource Button_Admin_menu}" Click="dom_click" />
+                <Button Height="250" Content="Помещения" Style="{StaticResource Button_Admin_menu}" Click="pom_click" BorderThickness="0,1,0,1" />
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="0,1,0,0" BorderBrush="#FF04A0FF">
+            <Frame  NavigationUIVisibility="Hidden" Name="frame"/>
+        </Border>
+    </Grid>
+</Window>

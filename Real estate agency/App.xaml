@@ -1,0 +1,163 @@
+﻿<Application x:Class="Real_estate_agency.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Real_estate_agency"
+             StartupUri="MainWindow.xaml">
+    
+    <Application.Resources>
+        <Style TargetType="Button" x:Key="Button_Registr">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                </Style>
+            </Style.Resources>
+            <Setter Property="Background" Value="#ffffff"></Setter>
+            <Setter Property="Height" Value="25"></Setter>
+            <Setter Property="Width" Value="100"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Button_pagin">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                </Style>
+            </Style.Resources>
+            <Setter Property="Background" Value="#ffffff"></Setter>
+            <Setter Property="Height" Value="40"></Setter>
+            <Setter Property="Width" Value="40"></Setter>
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Button_Back">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                </Style>
+            </Style.Resources>
+            <Setter Property="Background" Value="#ffffff"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="Width" Value="130"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Margin" Value="20"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+        </Style>
+
+        <Style TargetType="Image" x:Key="Image_Logo">
+            <Setter Property="Width" Value="120"></Setter>
+            <Setter Property="Source" Value="Images/Logo.png"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style TargetType="Image" x:Key="Image_star">
+            <Setter Property="Width" Value="7"></Setter>
+            <Setter Property="Source" Value="Images/star.png"></Setter>
+        </Style>
+
+        <Style TargetType="Image" x:Key="Image_Pod">
+            <Setter Property="Width" Value="200"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlock_Registr">
+            <Setter Property="Width" Value="120"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlock_Zaglav">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Foreground" Value="#04A0FF"></Setter>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBox_Registr">
+             <Setter Property="Width" Value="200"></Setter>
+             <Setter Property="FontSize" Value="20"></Setter>
+             <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+            <Setter Property="BorderThickness" Value="0, 0, 0, 1"></Setter>
+            <Setter Property="MaxLength" Value="8"></Setter>
+         
+        </Style>
+        <Style TargetType="PasswordBox" x:Key="PasswordBox_Registr">
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+            <Setter Property="BorderThickness" Value="0, 0, 0, 1"></Setter>
+            <Setter Property="MaxLength" Value="8"></Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Button_Admin_menu">
+            <Setter Property="Height" Value="70"></Setter>
+            <Setter Property="Background" Value="#ffffff"></Setter>
+            <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="BorderThickness" Value="0, 1, 0, 0"></Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Button_Pod_menu">
+            <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"></Setter>
+                    </Style>
+                </Style.Resources>
+             <Setter Property="Height" Value="300"></Setter>
+            <Setter Property="Width" Value="300"></Setter>
+            <Setter Property="Background" Value="#ffffff"></Setter>
+            <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="BorderThickness" Value="0, 0, 0, 1"></Setter>
+            <Setter Property="Margin" Value="60"></Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Button_nastr">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                </Style>
+            </Style.Resources>
+            <Setter Property="Height" Value="40"></Setter>
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Background" Value="#ffffff"></Setter>
+            <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="Button_table">
+            <Setter Property="Height" Value="40"></Setter>
+            <Setter Property="Width" Value="100"></Setter>
+            <Setter Property="Background" Value="#ffffff"></Setter>
+            <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlock_add">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlock_add_ned">
+            <Setter Property="Width" Value="80"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBox_add">
+            <Setter Property="Width" Value="350"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="BorderThickness" Value="0, 0, 0, 1"></Setter>
+            <Setter Property="BorderBrush" Value="#04A0FF"></Setter>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBox_add_ned" BasedOn="{StaticResource TextBox_add}">
+            <Setter Property="Width" Value="170"></Setter>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>

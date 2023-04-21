@@ -1,0 +1,48 @@
+﻿<Window x:Class="Real_estate_agency.Windows.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_estate_agency.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Агентство недвижимости" Height="860" Width="1920" Icon="/Images/Logo.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Button Style="{StaticResource Button_Registr}" Click="kok" Grid.Column="1" HorizontalAlignment="Right" Margin="10">
+            ?
+        </Button>
+        <Image Style="{StaticResource Image_Logo}"/>
+        <Border Grid.Row="1" BorderThickness="0,0,1,0" BorderBrush="#FF04A0FF">
+            <StackPanel>
+                <Button Content="Сотрудники" Style="{StaticResource Button_Admin_menu}" Click="Staff_click"/>
+                <Button Content="Должности" Style="{StaticResource Button_Admin_menu}" Click="dolznnost_click"/>
+                <Button Content="Клиенты" BorderThickness="0,1,0,1" Margin="0, 0, 0, 10" Style="{StaticResource Button_Admin_menu}" Click="Client_click"/>
+                <Button Content="Недвижимость" Name="Tip_nedviz" Click="nedviz_click" Style="{StaticResource Button_Admin_menu}"/>
+                <Button Content="Типы Недвижимости" Style="{StaticResource Button_Admin_menu}" Click="Tip_nedviz_click" />
+                <Button Content="Состояния недвижимости" BorderThickness="0,1,0,1" Margin="0, 0, 0, 10" Style="{StaticResource Button_Admin_menu}" Click="sostoyanie_nedviz_click"/>
+                <Button Content="Договоры" Name="Button_Dogovor" Click="Button_Dogovor_click" Style="{StaticResource Button_Admin_menu}"/>
+                <Button Content="Типы объявлений" Style="{StaticResource Button_Admin_menu}" Click="tip_ob_click"/>
+                <Button Content="Типы оплаты" Style="{StaticResource Button_Admin_menu}" BorderThickness="0,1,0,1" Click="oplata_click"/>
+                <Button  Style="{StaticResource Button_Admin_menu}" Margin="0, 10, 0, 0" BorderThickness="0,0,0,0" Name="Button_user" Click="Button_user_click">
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Text="Сменить пользователя" Margin="0, 0, 10, 0"></TextBlock>
+                        <Image Source="/Images/user.png" Width="30"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="0,1,0,0" BorderBrush="#FF04A0FF">
+            <Frame  NavigationUIVisibility="Hidden" Name="frame"/>
+        </Border>
+    </Grid>
+</Window>

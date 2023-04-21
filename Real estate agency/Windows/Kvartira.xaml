@@ -1,0 +1,156 @@
+﻿<Window x:Class="Real_estate_agency.Windows.Kvartira"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_estate_agency.Windows"
+        mc:Ignorable="d"
+       WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Квартиры" Height="860" Width="1920" Icon="/Images/Logo.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/Images/kvartiry.png" Style="{StaticResource Image_Pod}"/>
+        <Button Content="Назад" Grid.Column="1" Style="{StaticResource Button_Back}" Name="Button_back" Click="Button_back_click"/>
+        <Border Grid.Row="1" BorderThickness="0,0,1,0" BorderBrush="#FF04A0FF">
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="0,1,0,0" BorderBrush="#FF04A0FF">
+            <ListView Name="kvartir_panel" ScrollViewer.HorizontalScrollBarVisibility="Disabled"  Grid.ColumnSpan="2">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel HorizontalAlignment="Center"></WrapPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="White" Padding="5" CornerRadius="15" BorderBrush="#05386b" Margin="0, 0, 0, 70" BorderThickness="1">
+                            <Grid Width="600" Height="300" VerticalAlignment="Center" HorizontalAlignment="Center" Background="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <Image Source="{Binding Image}" Width="300" Height="300" Grid.RowSpan="7" Margin="0, 0, 10, 0"></Image>
+                                <StackPanel Grid.Row="9" Grid.RowSpan="2" Orientation="Horizontal">
+                                    <Button Content="Удалить" Height="30" Width="100" FontSize="12" Style="{StaticResource Button_nastr}" Click="button_delete_click" Background="#FFEE3131"></Button>
+                                    <Button Content="Редактировать" Click="btn_redact" Height="30" Width="100" FontSize="12" Style="{StaticResource Button_nastr}"></Button>
+                                </StackPanel>
+                                <StackPanel Grid.Row="7" Grid.RowSpan="2" Orientation="Horizontal">
+                                    <Button Content="Аренда" Height="30" Width="100" FontSize="12" Style="{StaticResource Button_nastr}" Name="btn_arenda1" Click="btn_arend" Background="White"></Button>
+                                    <Button Content="Продажа" Click="btn_prod" Height="30" Width="100" FontSize="12" Name="btn_prod" Style="{StaticResource Button_nastr}"></Button>
+                                </StackPanel>
+                                <TextBlock Grid.Column="1" Text="{Binding Property_type.Title,StringFormat={}Тип: {0}}"></TextBlock>
+                                <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Property_condition.Title,StringFormat={}Состояние: {0}}"></TextBlock>
+                                <TextBlock Grid.Column="1" Grid.RowSpan="2" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Addres,StringFormat={}Адрес: {0}}" ></TextBlock>
+                                <TextBlock Grid.Column="1" Grid.Row="4" Text="{Binding Cadastral_number,StringFormat={}Кадастровый номер: {0}}"></TextBlock>
+                                <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="5">
+                                    <TextBlock Margin="0, 0, 5, 0" Text="{Binding Client.LName,StringFormat={}ФИО: {0}}"></TextBlock>
+                                    <TextBlock Margin="0, 0, 5, 0" Text="{Binding Client.FName}"></TextBlock>
+                                    <TextBlock Margin="0, 0, 5, 0" Text="{Binding Client.OName}"></TextBlock>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Apartment_floor,StringFormat={}Этаж: {0}}"></TextBlock>
+                                    <TextBlock Text="{Binding Floors_House,StringFormat={} из  {0}}"></TextBlock>
+                                </StackPanel>
+                                <TextBlock Grid.Column="1" Grid.Row="7" Text="{Binding Number_of_rooms,StringFormat={}Кол-во комнат: {0}}"></TextBlock>
+                                <TextBlock Grid.Column="1" Grid.Row="8" Text="{Binding Area,StringFormat={}Площадь: {0} м2}"></TextBlock>
+                                <TextBlock Grid.Column="1" Grid.Row="9" Text="{Binding Price,StringFormat={}Цена: {0} р.}"></TextBlock>
+                                <TextBlock Grid.Column="1" Grid.Row="10" Text="{Binding Ad_type.Title,StringFormat={}Тип: {0}}"></TextBlock>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <StackPanel Grid.Column="2" Orientation="Vertical">
+                    <TextBlock Style="{StaticResource TextBlock_Zaglav}" Text="ПОИСК" HorizontalAlignment="Center"></TextBlock>
+                    <StackPanel  Orientation="Vertical" Margin="10, 0, 0, 20"  VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 10">
+                            <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="Цена"></TextBlock>
+                            <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="От" Width="40"></TextBlock>
+                            <TextBox  Style="{StaticResource TextBox_add_ned}" Width="20"  TextChanged="textSearchClic1k" Name="textbox_serach"></TextBox>
+                            <TextBlock Width="40" Style="{StaticResource TextBlock_add_ned}" Margin="10, 0, 0, 0" Text="До"></TextBlock>
+                            <TextBox Style="{StaticResource TextBox_add_ned}"  Width="20" TextChanged="textSearchClick2" Name="textbox_serach4"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                            <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="Адрес"></TextBlock>
+                            <TextBox Style="{StaticResource TextBox_add_ned}"  Width="133" TextChanged="textSearchClick3" Name="textbox_serach1"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+                            <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="Площадь"></TextBlock>
+                            <TextBox Style="{StaticResource TextBox_add_ned}" Width="133"  TextChanged="textSearchClick4" Name="textbox_serac2"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <StackPanel Margin="10, 0, 0, 0">
+                    <TextBlock Style="{StaticResource TextBlock_Zaglav}" Text="ФИЛЬТРЫ" HorizontalAlignment="Center" Margin="0, 0, 0, 20" ></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="Тип"></TextBlock>
+                        <ComboBox MaxDropDownHeight="150" Height="25" Width="120" DisplayMemberPath="Title" Margin="20, 0, 0, 0" SelectionChanged="comboBox_cb" x:Name="cb"></ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0, 20, 0, 0">
+                        <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="Состояние"></TextBlock>
+                        <ComboBox Height="25" Width="120" DisplayMemberPath="Title" Margin="20, 0, 0, 0" SelectionChanged="comboBox_cb1" x:Name="cb1"></ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0, 20, 0, 0">
+                        <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="Продажа/аренда" TextWrapping="Wrap"></TextBlock>
+                        <ComboBox Height="25" Width="120"  DisplayMemberPath="Title" Margin="20, 0, 0, 0" SelectionChanged="comboBox_cb2" x:Name="cb2"></ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0, 20, 0, 0">
+                        <TextBlock Style="{StaticResource TextBlock_add_ned}" Text="Кол-во комнат" TextWrapping="Wrap"></TextBlock>
+                        <ComboBox Height="25" Width="120" Margin="20, 0, 0, 0" SelectionChanged="comboBox_cb4" x:Name="cb4"></ComboBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="2">
+                <StackPanel VerticalAlignment="Center">
+                    <Button Style="{StaticResource Button_nastr}" Click="Button_add">
+                        <Image Style="{StaticResource Image_Logo}" Source="/Images/dom_add.png"></Image>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 20, 0, 0">
+                    <Button Click="revers_btn_click" Width="40" Style="{StaticResource Button_Back}">
+                        <Image Source="/Images/revers.png"></Image>
+                    </Button>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0, 30, 0, 0">
+                    <Button Style="{StaticResource Button_pagin}" Click="GoToFirstPage" Margin="2" Height="30" Width="30"  Content="&lt;&lt;"></Button>
+                    <Button Style="{StaticResource Button_pagin}" Click="GoToPreviousPage" Margin="2" Height="30" Width="30"  Content="&lt;"  ></Button>
+                    <TextBox VerticalAlignment="Center" Name="TxtCurrentPage"  Height="30"  Margin="2" Width="50" IsEnabled="False" ></TextBox>
+                    <Label Name="LblTotalPages" Height="30"  Width="50" >из N</Label>
+                    <Button Style="{StaticResource Button_pagin}" Click="GoToNextPage" Margin="2" Height="30" Width="30" Content="&gt;"></Button>
+                    <Button Style="{StaticResource Button_pagin}" Click="GoToLastPage" Margin="2" Height="30" Width="30"  Content="&gt;&gt;"  ></Button>
+                </StackPanel>
+            </StackPanel>
+            
+        </Grid>
+    </Grid>
+</Window>
